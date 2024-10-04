@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-export const dbConnection = () => {
+export const dbconnection = () => {
   mongoose
     .connect(
       "mongodb+srv://sainathbalkawade7:eHVFCKOyDj8U5xqO@cluster0.5xhsf.mongodb.net/?retryWrites=true",
