@@ -1,16 +1,17 @@
 import mongoose from "mongoose";
-const URI = "mongodb://localhost:27017/Backend_Progress";
 
-export const dbconnection = () => {
+export const dbConnection = () => {
   mongoose
-    .connect(URI, {
-      useNewUrlParser: true,
-      UseUnifiedTopology: true,
-    })
+    .connect(
+      "mongodb+srv://sainathbalkawade7:<db_password>@cluster0.5xhsf.mongodb.net/?retryWrites=true",
+      {
+        dbName: "TODO_APPLICATION",
+      }
+    )
     .then(() => {
-      console.log("database connected succesfully");
+      console.log("Connected to database successfully!");
     })
     .catch((error) => {
-      console.log("database connection error", error);
+      console.log(`Some error occured while connecting to database: ${error}`);
     });
 };
