@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 export const dbConnection = () => {
   mongoose
     .connect(
-      "mongodb+srv://sainathbalkawade7:<db_password>@cluster0.5xhsf.mongodb.net/?retryWrites=true",
+      "mongodb+srv://sainathbalkawade7:eHVFCKOyDj8U5xqO@cluster0.5xhsf.mongodb.net/?retryWrites=true",
       {
         dbName: "TODO_APPLICATION",
       }
